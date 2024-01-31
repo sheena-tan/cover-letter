@@ -4,4 +4,4 @@ This repository contains code for the plot on my research cover letter.
 
 ## Repo Setup
 
-RScript `1_plot1.R` contains the code to generate `myplot.png`
+Script `1_plot1.R` contains the code to generate plot `myplot.png` from data `hours.csv`.

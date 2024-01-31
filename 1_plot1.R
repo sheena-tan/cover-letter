@@ -42,4 +42,4 @@ myplot <- ggplot(hours_data, aes(x = month, y = sum_hours)) +
     mapping = aes(segment.size = 0.2, segment.color	= "#a6a6a6")
   )
 
-ggsave(here("myplot.png"), myplot, width = 5, height = 5)
+ggsave(here("myplot.png"), myplot, width = 5, height = 5, units = "in")

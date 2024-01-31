@@ -18,7 +18,7 @@ showtext_auto()
 tmp_date <- hours_data |> filter(month == 0 | is.na(labels) == FALSE)
 
 # hours experience vs year in school
-ggplot(hours_data, aes(x = month, y = sum_hours)) +
+myplot <- ggplot(hours_data, aes(x = month, y = sum_hours)) +
   geom_line(color = "#81A969") +
   scale_y_continuous(limits = c(0,200)) +
   theme_minimal() +
@@ -42,3 +42,4 @@ ggplot(hours_data, aes(x = month, y = sum_hours)) +
     mapping = aes(segment.size = 0.2, segment.color	= "#a6a6a6")
   )
 
+ggsave(here("myplot.png"), myplot, width = 5, height = 5)
